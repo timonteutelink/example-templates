@@ -1,0 +1,21 @@
+{
+  "name": "{{template_dir_name}}",
+  "version": "0.0.0",
+  "author": "{{template_author_name}} <{{template_author_email}}>",
+  "license": "{{template_license}}",
+  "description": "{{template_description}}",
+  "packageManager": "bun@1.2.17",
+  "dependencies": {
+    "@timonteutelink/template-types-lib": "0.0.43",
+    "yaml": "^2.8.0",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.9",
+    "prettier": "^3.6.1",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "format": "prettier -w '**/templateConfig.ts'"
+  }
+}
