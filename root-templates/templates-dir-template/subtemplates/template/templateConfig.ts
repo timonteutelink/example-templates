@@ -15,7 +15,7 @@ const templateConfig: TemplateConfig = {
 	description: "A template",
 	author: "Timon Teutelink",
 	multiInstance: true,
-	specVersion: "1",
+	specVersion: "1.0.0",
 };
 
 const templateConfigModule: TemplateConfigModule<

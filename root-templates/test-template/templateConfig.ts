@@ -28,7 +28,7 @@ const templateConfig: TemplateConfig = {
 	name: "templates_dir_template",
 	description: "A template to create templates",
 	author: "Timon Teutelink",
-	specVersion: "1",
+	specVersion: "1.0.0",
 };
 
 const templateConfigModule: TemplateConfigModule<

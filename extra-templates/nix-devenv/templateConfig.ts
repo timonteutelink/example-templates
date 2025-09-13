@@ -27,7 +27,7 @@ const templateConfig: TemplateConfig = {
   name: "nix_devenv",
   description: "Nix config for any project ever",
   author: "Timon Teutelink",
-  specVersion: "1",
+  specVersion: "1.0.0",
 };
 
 const templateConfigModule: TemplateConfigModule<
