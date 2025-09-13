@@ -11,7 +11,7 @@ const templateSettingsSchema = z.object({
 	test_object: z.object({
 		test_array: z.array(z.object({
 			test_string_in_array: z.string().min(5).default("Very nice").describe("A string in an array to test with"),
-		})).min(2).default([{ test_string_in_array: "banananananana" }]).describe("An array to test with"),
+		})).min(2).default([{ test_string_in_array: "banananananana" }, { test_string_in_array: "banana" }]).describe("An array to test with"),
 		more_stuff: z.enum(["option1", "option2", "option3"]).default("option2").describe("An enum to test with"),
 	})
 })
@@ -43,16 +43,6 @@ const templateConfigModule: TemplateConfigModule<
 		...templateSettings,
 	}),
 	autoInstantiatedSubtemplates: [
-		{
-			subTemplateName: "nix_devenv",
-			mapSettings: () => ({
-				unstable_pkgs: false,
-				env_vars: [],
-				languages: {
-					javascript: { bun: true }
-				},
-			}),
-		},
 	],
 	redirects: [
 		{
@@ -82,10 +72,6 @@ const templateConfigModule: TemplateConfigModule<
 	],
 
 	handlebarHelpers: { coolifyHelper }
-
-
-
-
 
 
 };
