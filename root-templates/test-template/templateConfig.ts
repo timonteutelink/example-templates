@@ -25,7 +25,7 @@ const coolifyHelper = (str: string) => {
 const templateFinalSettingsSchema = templateSettingsSchema;
 
 const templateConfig: TemplateConfig = {
-	name: "templates_dir_template",
+	name: "test_template",
 	description: "A template to create templates",
 	author: "Timon Teutelink",
 	specVersion: "1.0.0",
