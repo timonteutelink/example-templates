@@ -6,7 +6,7 @@
   "description": "{{template_description}}",
   "packageManager": "bun@1.2.17",
   "dependencies": {
-    "@timonteutelink/template-types-lib": "0.0.43",
+    "@timonteutelink/template-types-lib": "0.0.45",
     "yaml": "^2.8.0",
     "zod": "^3.25.67"
   },

@@ -6,26 +6,26 @@ import {
 
 const templateSettingsSchema = z.object({
 	destination_dir: z.string().optional().default("").describe("The directory where the template should be located, leave empty when generating root template"),
-
 });
 
-export type FinalTemplateSettings = z.infer<typeof templateSettingsSchema>;
+const templateFinalSettingsSchema = templateSettingsSchema;
 
 const templateConfig: TemplateConfig = {
 	name: "template",
 	description: "A template",
 	author: "Timon Teutelink",
 	multiInstance: true,
+	specVersion: "1",
 };
 
 const templateConfigModule: TemplateConfigModule<
-	FinalTemplateSettings,
 	{},
 	typeof templateSettingsSchema
 > = {
 	templateConfig,
 	targetPath: ".",
 	templateSettingsSchema,
+	templateFinalSettingsSchema,
 	mapFinalSettings: ({ templateSettings }) => ({
 		...templateSettings,
 	})

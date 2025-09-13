@@ -21,22 +21,23 @@ const templateSettingsSchema = z.object({
   }),
 });
 
-export type FinalTemplateSettings = z.infer<typeof templateSettingsSchema>;
+const templateFinalSettingsSchema = templateSettingsSchema;
 
 const templateConfig: TemplateConfig = {
   name: "nix_devenv",
   description: "Nix config for any project ever",
   author: "Timon Teutelink",
+  specVersion: "1",
 };
 
 const templateConfigModule: TemplateConfigModule<
-  FinalTemplateSettings,
   {},
   typeof templateSettingsSchema
 > = {
   templateConfig,
   targetPath: ".",
   templateSettingsSchema,
+  templateFinalSettingsSchema,
   mapFinalSettings: ({ templateSettings }) => ({
     ...templateSettings,
   }),
