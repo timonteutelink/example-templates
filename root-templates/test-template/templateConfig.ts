@@ -5,9 +5,9 @@ import {
 } from "@timonteutelink/template-types-lib";
 
 const templateSettingsSchema = z.object({
-	test_boolean: z.boolean().optional().default(false).describe("A boolean to test with"),
-	test_string: z.string().describe("A string to test with"),
-	test_number: z.number().min(10).max(100).describe("A number to test with"),
+	test_boolean: z.boolean().optional().default(true).describe("A boolean to test with"),
+	test_string: z.string().default("Whats 9 + 10?").describe("A string to test with"),
+	test_number: z.number().min(10).max(100).default(21).describe("A number to test with"),
 	test_object: z.object({
 		test_array: z.array(z.object({
 			test_string_in_array: z.string().min(5).default("Very nice").describe("A string in an array to test with"),
