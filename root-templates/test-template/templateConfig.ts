@@ -45,7 +45,9 @@ const templateConfigModule: TemplateConfigModule<
 	autoInstantiatedSubtemplates: [
 		{
 			subTemplateName: "test_stuff",
-
+			mapSettings: (finalSettings) => ({
+				answer: finalSettings.test_string === "Whats 9 + 10?" ? String(finalSettings.test_number) : "42",
+			}),
 		}
 	],
 	redirects: [
