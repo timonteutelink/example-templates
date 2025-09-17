@@ -26,7 +26,7 @@ const templateFinalSettingsSchema = templateSettingsSchema;
 
 const templateConfig: TemplateConfig = {
 	name: "test_template",
-	description: "A template to create templates",
+	description: "A template to test all features",
 	author: "Timon Teutelink",
 	specVersion: "1.0.0",
 };
@@ -43,6 +43,10 @@ const templateConfigModule: TemplateConfigModule<
 		...templateSettings,
 	}),
 	autoInstantiatedSubtemplates: [
+		{
+			subTemplateName: "test_stuff",
+
+		}
 	],
 	redirects: [
 		{
