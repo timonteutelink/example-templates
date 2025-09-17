@@ -13,7 +13,9 @@ const templateSettingsSchema = z.object({
 	template_description: z.string().optional().default("Cool repository full of templates.").describe("The description to put in the root package.json file"),
 });
 
-const templateFinalSettingsSchema = templateSettingsSchema;
+const templateFinalSettingsSchema = templateSettingsSchema.extend({
+	project_name: z.string().describe("The name of the project"),
+});
 
 const templateConfig: TemplateConfig = {
 	name: "templates_dir_template",
@@ -30,8 +32,9 @@ const templateConfigModule: TemplateConfigModule<
 	targetPath: ".",
 	templateSettingsSchema,
 	templateFinalSettingsSchema,
-	mapFinalSettings: ({ templateSettings }) => ({
+	mapFinalSettings: ({ fullProjectSettings, templateSettings }) => ({
 		...templateSettings,
+		project_name: fullProjectSettings.projectName,
 	}),
 	autoInstantiatedSubtemplates: (settings) => settings.nix ? [
 		{
