@@ -22,6 +22,7 @@ const templateConfig: TemplateConfig = {
 	description: "A template to create templates",
 	author: "Timon Teutelink",
 	specVersion: "1.0.0",
+	isRootTemplate: true,
 };
 
 const templateConfigModule: TemplateConfigModule<

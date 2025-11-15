@@ -23,6 +23,7 @@ const templateConfig: TemplateConfig = {
 	description: "A FastAPI template",
 	author: "Timon Teutelink",
 	specVersion: "1.0.0",
+	isRootTemplate: true
 };
 
 const templateConfigModule: TemplateConfigModule<

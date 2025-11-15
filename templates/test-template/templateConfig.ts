@@ -29,6 +29,7 @@ const templateConfig: TemplateConfig = {
 	description: "A template to test all features",
 	author: "Timon Teutelink",
 	specVersion: "1.0.0",
+	isRootTemplate: true
 };
 
 const templateConfigModule: TemplateConfigModule<
