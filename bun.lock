@@ -16,7 +16,7 @@
     },
   },
   "packages": {
-    "@timonteutelink/template-types-lib": ["@timonteutelink/template-types-lib@0.0.55", "", { "peerDependencies": { "handlebars": "^4.7.8", "zod": "^4.1.12" } }, "sha512-0920OzKjJS9c/krGlLY6C7Cz9Ibso6W+xFNYJILVJNGivTDtHYmH0x31DNvS0MiUr3HX1rh5FxnZNRh0Vdz8VQ=="],
+    "@timonteutelink/template-types-lib": ["@timonteutelink/template-types-lib@0.0.56", "", { "peerDependencies": { "handlebars": "^4.7.8", "zod": "^4.1.12" } }, "sha512-9gWJR2v64GoKfvL+eVsQKYGKCkihTiNvfYq573r+LytBqeXvlWMHHUy33s/sD1SsIHjYGpUeqHkvXBSlXXq4Hg=="],
 
     "@types/node": ["@types/node@24.10.1", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ=="],
 
