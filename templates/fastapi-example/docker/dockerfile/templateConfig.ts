@@ -5,6 +5,7 @@ import {
 } from "@timonteutelink/template-types-lib";
 
 const templateSettingsSchema = z.object({
+	cache: z.boolean().default(true)
 });
 
 const templateFinalSettingsSchema = templateSettingsSchema.extend({
@@ -28,7 +29,7 @@ const templateConfigModule: TemplateConfigModule<
 	templateFinalSettingsSchema,
 	mapFinalSettings: ({ fullProjectSettings, templateSettings }) => ({
 		...templateSettings,
-		project_name: fullProjectSettings.projectName,
+		project_name: fullProjectSettings.projectRepositoryName,
 	}),
 };
 
