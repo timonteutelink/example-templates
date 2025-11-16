@@ -6,10 +6,10 @@
   "description": "",
   "packageManager": "bun@1.2.17",
   "dependencies": {
-    "@timonteutelink/template-types-lib": "0.0.54",
+    "@timonteutelink/template-types-lib": "0.0.55",
     "yaml": "^2.8.1",
-    "zod": "^3.25.76",
-    "@types/node": "^22.18.1"
+    "zod": "^4.1.12",
+    "@types/node": "^24.10.1"
   },
   "devDependencies": {
     "prettier": "^3.6.2",

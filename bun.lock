@@ -4,21 +4,21 @@
     "": {
       "name": "example-templates",
       "dependencies": {
-        "@timonteutelink/template-types-lib": "0.0.54",
-        "@types/node": "^22.18.1",
-        "yaml": "^2.8.1",
-        "zod": "^3.25.76",
+        "@timonteutelink/template-types-lib": "latest",
+        "@types/node": "latest",
+        "yaml": "latest",
+        "zod": "latest",
       },
       "devDependencies": {
-        "prettier": "^3.6.2",
-        "typescript": "^5.9.3",
+        "prettier": "latest",
+        "typescript": "latest",
       },
     },
   },
   "packages": {
-    "@timonteutelink/template-types-lib": ["@timonteutelink/template-types-lib@0.0.54", "", { "peerDependencies": { "handlebars": "^4.7.8", "zod": "^3.25.76" } }, "sha512-7tw+80HdbILbY+meEKMHbVF857nradEDBjYetEZpG/PydsCaX9QiEmB15rE9AXsr9vNOgw404+5d2V6sbVgAmQ=="],
+    "@timonteutelink/template-types-lib": ["@timonteutelink/template-types-lib@0.0.55", "", { "peerDependencies": { "handlebars": "^4.7.8", "zod": "^4.1.12" } }, "sha512-0920OzKjJS9c/krGlLY6C7Cz9Ibso6W+xFNYJILVJNGivTDtHYmH0x31DNvS0MiUr3HX1rh5FxnZNRh0Vdz8VQ=="],
 
-    "@types/node": ["@types/node@22.18.1", "", { "dependencies": { "undici-types": "~6.21.0" } }, ""],
+    "@types/node": ["@types/node@24.10.1", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ=="],
 
     "handlebars": ["handlebars@4.7.8", "", { "dependencies": { "minimist": "^1.2.5", "neo-async": "^2.6.2", "source-map": "^0.6.1", "wordwrap": "^1.0.0" }, "optionalDependencies": { "uglify-js": "^3.1.4" }, "bin": "bin/handlebars" }, ""],
 
@@ -34,12 +34,12 @@
 
     "uglify-js": ["uglify-js@3.19.3", "", { "bin": { "uglifyjs": "bin/uglifyjs" } }, ""],
 
-    "undici-types": ["undici-types@6.21.0", "", {}, ""],
+    "undici-types": ["undici-types@7.16.0", "", {}, "sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw=="],
 
     "wordwrap": ["wordwrap@1.0.0", "", {}, ""],
 
     "yaml": ["yaml@2.8.1", "", { "bin": "bin.mjs" }, ""],
 
-    "zod": ["zod@3.25.76", "", {}, ""],
+    "zod": ["zod@4.1.12", "", {}, "sha512-JInaHOamG8pt5+Ey8kGmdcAcg3OL9reK8ltczgHTAwNhMys/6ThXHityHxVV2p3fkw/c+MAvBHFVYHFZDmjMCQ=="],
   }
 }
