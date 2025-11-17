@@ -13,11 +13,14 @@ const templateSettingsSchema = z.object({
     }),
   ),
   languages: z.object({
-    javascript: z.object({
-      bun: z.boolean().optional().default(false),
-    }).optional().default({
-      bun: false,
-    }),
+    javascript: z
+      .object({
+        bun: z.boolean().optional().default(false),
+      })
+      .optional()
+      .default({
+        bun: false,
+      }),
   }),
 });
 
