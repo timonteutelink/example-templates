@@ -93,6 +93,7 @@ const templateConfigModule: TemplateConfigModule<
   ],
 
   sideEffects: [
+
     {
       filePath: "README.md",
       apply: async (settings, oldContent) => {
