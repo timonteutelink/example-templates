@@ -74,6 +74,7 @@ const templateConfigModule: TemplateConfigModule<
   mapFinalSettings: ({ templateSettings }) => ({
     ...templateSettings,
   }),
+
   autoInstantiatedSubtemplates: [
     {
       subTemplateName: "test_stuff",
@@ -85,6 +86,7 @@ const templateConfigModule: TemplateConfigModule<
       }),
     },
   ],
+
   redirects: [
     {
       from: "testlocation/README.md",
@@ -93,7 +95,6 @@ const templateConfigModule: TemplateConfigModule<
   ],
 
   sideEffects: [
-
     {
       filePath: "README.md",
       apply: async (settings, oldContent) => {
